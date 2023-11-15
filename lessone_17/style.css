@@ -24,6 +24,10 @@ body {
     transition: 0.5s transform;
 }
 
+.item-carousel {
+    /* overflow: hidden; */
+}
+
 .container-button-slide {
     position: absolute;
     top: 0px;
