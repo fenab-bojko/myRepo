@@ -10,7 +10,7 @@ let widthItem = $containerCarousel.offsetWidth
 
 let itemColectionLength = $itemCollection.length
 
-let loop = 1
+let loop = 1 
 
 let translate = 0
 
