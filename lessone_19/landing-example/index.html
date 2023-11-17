@@ -29,6 +29,7 @@
                 </div>
             </div>
             <div class="header-nav">
+                <div class="avatar hidden"> <img src="images/avatar.svg" alt=""></div>
                 <div class="button" data-name="log_in">log in</div>
                 <div class="button button-primary" data-name="sing_up">Sign up</div>
             </div>
@@ -68,7 +69,7 @@
                     </ul>
                 </div>
                 <div class="pricing-card__footer">
-                    <div class="button button-primary">Get started</div>  
+                    <div class="button button-primary" data-name="start">Get started</div>  
                     
                 </div>  
             </div>
@@ -87,7 +88,7 @@
                     </ul>
                 </div>
                 <div class="pricing-card__footer">
-                    <div class="button button-primary">Get started</div>  
+                    <div class="button button-primary" data-name="start">Get started</div>  
                 </div>  
             </div>
             <div class="pricing-card">
@@ -105,32 +106,14 @@
                     </ul>
                 </div>
                 <div class="pricing-card__footer">
-                    <div class="button button-primary">Get started</div>  
+                    <div class="button button-primary" data-name="start">Get started</div>  
                 </div>  
             </div>
         </div>
     </section>
-    <div class="fade" >
-        <div class="modal" id="modal" style="display: flex; flex-direction: column; gap: 30px;">
-            <div class="bank-card">
-                <div class="title" style="font-size: 30px; font-weight: 700; text-align: center;">Enter your password</div>
-            </div>
-            <div class="input">
-                <label for="">Email</label>
-                <input id="userEmail" type="text" placeholder="email@gmail.com">
-                <div class="hint">This is a hint text to help user.</div>
-            </div>
-            <div class="input">
-                <label for="">Password</label>
-                <input id="userPassword" type="password" placeholder="">
-                <div class="hint hidden">This is a hint text to help user.</div>
-            </div>
-            <div>
-                <div class="button" data-name="enter">Enter</div>
-                <div class="button button-primary" data-name="cancel">Cancel</div>
-            </div>
-
-            <!-- <div class="content payment">
+    <div class="fade hidden" >
+        <div class="modal" >
+            <div class="content payment hidden" id="modal-bank">
                 <section class="card">
                     <div class="bank-card">
                         <div>
@@ -185,7 +168,7 @@
                             </div>
                         </div>
 
-                        <div>
+                        <div class=>
                             <input type="checkbox" checked disabled>
                             <textarea name="" id="" cols="30" rows="10">123123123123</textarea>
                             <select name="" id="">
@@ -198,8 +181,37 @@
                         </div>
                     </form>
                 </section>
-            </div>--> 
-        </div>  
+            </div>
+            <div class="content payment hidden" id="modal-autorisacion">
+                <div>
+                    <div class="logo-autarisacion">
+                        <div>
+                            <div><img src="images/close.svg" alt="Close"></div>   
+                        </div>
+                    </div>
+                    <div class="autorisacion-head">
+                        <div><h3>Please enter your password</h3></div>
+                        <div class="hint">Enter your password to make this change.</div>
+                    </div>
+                    <div class="container-input">
+                        <div class="input">
+                            <label for="email">Email of username</label>
+                            <input id="email" type="email" placeholder="email@gmail.com">
+                            <div class="hint hidden">This is a hint text to help user.</div>
+                        </div>
+                        <div class="input">
+                            <label for="pass">Password</label>
+                            <input id="pass" type="password" placeholder="*********" minlength="8">
+                            <div class="hint hidden">This is a hint text to help user.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-button">
+                   <div class="button" data-name="cancel">Cancel</div>
+                   <div class="button button-primary" data-name="enter"> Log in</div>
+                </div>
+           </div> 
+        </div> 
     </div>
     <script src="js/script.js"></script>
 </body>

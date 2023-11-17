@@ -13,9 +13,6 @@ body {
     padding: 0px 32px;
 }
 
-.hidden {
-    display: none;
-}
 
 /* buttons */
 
@@ -87,6 +84,50 @@ body {
     box-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.03), 0px 20px 24px -4px rgba(16, 24, 40, 0.08);
 }
 
+#modal-autorisacion>div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+
+}
+
+.autorisacion-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+
+.logo-autarisacion {
+display: flex;
+justify-content: center;
+}
+
+.logo-autarisacion>div {
+    width: 48px;
+    height: 48px;
+    background-color: #F4EBFF;
+    border-radius: 50%;
+    padding: 12px;
+    display: flex;
+    place-content: center;
+}
+
+.logo-autarisacion>div>div {
+    background-color: #F9F5FF;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    place-content: center;
+}
+.container-input{
+    margin-bottom: 50px;
+}
+
+
 
 /* form */
 
@@ -102,6 +143,7 @@ body {
 .form-row .input:last-child {
     width: 112px;
 }
+
 
 
 /* input */
@@ -146,3 +188,11 @@ body {
     line-height: 20px;
 }
   
+.hidden {
+    display: none;
+}
+
+.error {
+    border-color: red !important;
+
+}
