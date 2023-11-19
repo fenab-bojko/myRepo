@@ -22,43 +22,59 @@ const startTimer = () => {
     if (+(date.slice(0, 4)) === +(nowDate.slice(0, 4)) && +(date.slice(5,7)) < (+(nowDate.slice(5,7)) + 1)) isError()
     if (+(date.slice(0, 4)) === +(nowDate.slice(0, 4)) && +(date.slice(5,7)) === (+(nowDate.slice(5,7)) + 1) && +(date.slice(8)) < +(nowDate.slice(8))) isError()
 
+    
     let resultYear = +(date.slice(0, 4)) - +(nowDate.slice(0, 4))
     let resultMonth = Math.abs (+(date.slice(5,7)) - (+(nowDate.slice(5,7)) + 1))
     let resultDay = Math.abs (+(date.slice(8)) - +(nowDate.slice(8)))
 
+    const timer = {
+        day: 0,
+        hour: 12,
+        minute: 0,
+        second: 0,
+        }
+        
     if(!resultYear && !isLeab) resultDay = 365 * resultYear
     if(!resultYear && isLeab) resultDay = 366 * resultYear
     if(!resultMonth) resultDay = 30 * resultMonth
     if (!resultMonth && isFebruary && isLeab) resultDay = 29 * resultMonth
     if (!resultMonth && isFebruary && !isLeab) resultDay = 28 * resultMonth
+    
+    timer.day = resultDay
 
-    let second = 0 
-    let minute = 0
-    let hour = 0
-
-    setInterval(() => {console.log(--second)}, 1000)
-
-
-        if (second < 0) {
-            --minute
+    setInterval(() => {
+        timer.second--
+        if (timer.second < 0) {
+            timer.minute--
             second = 59
         }
-        if (minute < 0) {
-            --hour
+        if (timer.minute < 0) {
+            timer.hour--
             minute = 59
         }
-        if (hour < 0) {
-            --resultDay
+        if (timer.hour < 0) {
+            timer.day--
             hour = 23
         }
-        if (resultDay < 0) isStart()
+        if (timer.day < 0) {
+            isStart()
+            clearInterval()
+        }
+    }, 1000)
+
+
+        
+        
+
 
     
     // (04 || 06 || 09 || 11)
-      console.log(hour)
+    
+        console.log(timer.day)
+      console.log(timer.hour)
 
-      console.log(minute)
-      console.log(second)
+      console.log(timer.minute)
+      console.log(timer.second)
 }
 
 
