@@ -30,7 +30,7 @@ const startTimer = () => {
 
 
 // проверки на актуальность выбранных дат
-    if (+(date.slice(0, 4)) < +(nowDate.slice(0, 4))) isError()
+    if (+(date.slice(0, 4)) < +(nowDate.slice(0, 4))) {isError() clearInterval ()}
     if (+(date.slice(0, 4)) === +(nowDate.slice(0, 4)) && +(date.slice(5,7)) < (+(nowDate.slice(5,7)) + 1)) isError()
     if (+(date.slice(0, 4)) === +(nowDate.slice(0, 4)) && +(date.slice(5,7)) === (+(nowDate.slice(5,7)) + 1) && +(date.slice(8)) < +(nowDate.slice(8))) isError()
     // Объект для подсчета оставшегося времени
