@@ -162,16 +162,17 @@ const $fade = document.createElement('div')
 $fade.className = 'fade hidden'
 $container.append($fade)
 
-
-const addTask = (e) => {
+//______________________________________________________________AddFade________________________________________________________
+const clickContainer = (e) => {
     if (e.target.dataset.name === 'add-task') {
         $fade.classList.remove('hidden')
     }
 }
 
+// ____________________________________________________________ListenerContainer_________________________________________
+$container.addEventListener('click', clickContainer)
 
-
-$container.addEventListener('click', addTask)
+// ___________________________________________________________Clouse Fade_________________________________________________________________
 $fade.addEventListener('click', (e) => {
     if (e.target === e.currentTarget) {
         $fade.classList.add('hidden')

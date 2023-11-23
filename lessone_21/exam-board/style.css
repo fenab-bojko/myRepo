@@ -27,6 +27,8 @@ body {
     width: 32px;
     height: 32px;
     margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
 }
 
 .container-nav-item {
