@@ -1,0 +1,79 @@
+.tasks {
+
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #EAECF0;
+    align-items: center;
+    color: #667085;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    
+
+    .task {
+        width: 370px;
+        gap: 12px;
+        .title {
+            color: #101828;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+        }
+    }
+
+    .status {
+        width: 130px;
+
+        >div {
+            display: flex;
+            padding: 2px 8px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 16px;
+            background: #F2F4F7;
+        }
+
+    }
+
+    .description {
+        width: 370px;
+    }
+
+    .start {
+       width: 150px;
+    }
+
+    .finish {
+        width: 150px;
+    }
+
+    .edit {
+        width: 130px;
+        display: flex;
+        gap: 3px;
+    }
+    .cell {
+
+        display: flex;
+        padding: 16px 24px;
+        align-items: center;
+        height: 72px;
+        justify-content: left;
+        flex-grow: 1;
+        
+        .check {
+            height: 20px;
+            padding: 3px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+            border: 1px solid  #D0D5DD;
+            background: #F9F5FF;
+            width: 20px;
+            display: flex;
+        }
+    }
+}

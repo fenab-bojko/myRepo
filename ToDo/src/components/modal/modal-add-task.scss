@@ -1,0 +1,126 @@
+.modal-add-task {
+    margin: 0 auto;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    width: 480px;
+    padding: 24px;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.03), 0px 20px 24px -4px rgba(16, 24, 40, 0.08);
+
+    .head {
+        align-self: stretch;
+        color: #101828;
+        text-align: center;
+
+        font-size: 18px;
+
+        font-style: normal;
+
+        font-weight: 600;
+
+        line-height: 28px; 
+        margin-bottom: 20px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 32px;
+
+        span {
+            color:  #344054;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px; 
+        }
+
+        .task {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            
+        }
+
+        .description {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+           
+            >.input{
+                min-height: 95px;
+            }
+        }
+
+        .date {
+            display: flex;
+            gap: 16px;
+
+            .start {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            }
+
+            .finish {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            }
+        }
+
+        .input{
+            display: flex;
+            padding: 10px 14px;
+
+            align-items: center;
+
+            gap: 8px;
+
+            align-self: stretch;
+
+            border-radius: 8px;
+
+            border: 1px solid #D0D5DD;
+
+            background: #FFF;
+
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+            input {
+                border: none;
+                color: var(--gray-500, #667085);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                outline: none;
+                width: 100% ;
+            }
+
+            textarea {
+                border: none;
+                color: var(--gray-500, #667085);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                outline: none;
+                resize: none;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .button-container {
+
+        display: flex;
+        gap: 12px;
+        justify-content: space-between;
+    
+
+    }
+}

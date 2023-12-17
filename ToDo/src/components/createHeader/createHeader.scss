@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 32px;
+
+    h1 {
+        color: #101828;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 38px;
+    }
+}
