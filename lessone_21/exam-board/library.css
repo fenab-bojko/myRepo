@@ -1,0 +1,111 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    gap: 8px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.button span {
+    font-size: 14px;
+    font-family: inter;
+    font-weight: 600px;
+}
+
+.button-primory {
+    background-color: #7F56D9;
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+/* ___________________Filters and Search Bar______________________________ */
+.filters-search {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+/* _______Filters_________________________________ */
+.filters {
+    display: flex;
+    gap: 12px;
+}
+/* _________________Search________________________________ */
+input {
+    border: none;
+}
+
+.search {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+}
+
+/* _____________Navigation___________________ */
+.navigation {
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 24px 16px 24px;
+    align-items: center;
+}
+
+/* _______________Check Box_______________________ */
+.check-box {
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    border: 1px solid #D0D5DD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check-box-active {
+    border: 1px solid #7F56D9;
+    background: #F9F5FF;
+}
+
+.check-box img {
+    width: 14px;
+    height: 14px;
+
+}
+/* ______________Plug________________ */
+.plug-add-task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    border-bottom: 1px solid #EAECF0;
+}
+
+.plug-add-task div {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.plug-add-task img {
+    height: 200px;
+}
+
+/* ___________________Fade_______________ */
+.fade {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.40);
+    backdrop-filter: blur(8px);
+}
